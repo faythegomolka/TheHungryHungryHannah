@@ -1,0 +1,33 @@
+.PhotoGrid{
+  text-align: center;
+  background-color: #fff6f7;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Grid-image{
+  width: 80%;
+  height: auto;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+  }
+  border: none;
+  outline: none;
+}
+
+.Image-container{
+  width: 20%;
+  padding-top: 5vh;
+}
+
+.Row-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}

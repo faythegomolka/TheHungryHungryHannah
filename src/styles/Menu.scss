@@ -1,0 +1,120 @@
+.Menu {
+  text-align: center;
+  background-color: #fff6f7;
+  flex-direction: column;
+  display: flex;
+  height: 250vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.Menu-selector{
+  margin-top: 5vh;
+  margin-bottom: -5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Selector-text{
+  font-family: 'Roboto Condensed';
+  font-size: 1.5rem;
+  color: #fff6f7;
+  background-color: #05326f;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  &:hover{
+    color: #05326f;
+    background-color: #fff6f7;
+    cursor: pointer;
+    border: solid 2px #05326f;
+  }
+}
+
+.Menu-head{
+  font-family: 'Pacifico';
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: -3vh;
+  color: #05326f;
+}
+
+.Menu-subhead{
+  font-family: 'Pacifico';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #05326f;
+  font-style: oblique;
+  text-decoration: underline;
+}
+
+.Menu_row{
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Menu_item{
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Menu_photo{
+  width:80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  margin-bottom: 1vh;
+}
+
+.Opaque_menu_photo{
+  width:80%;
+  opacity: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  margin-bottom: 1vh;
+  z-index: 0;
+  position: relative;
+}
+
+.Item-caption{
+  font-family: 'Roboto Condensed';
+  font-size: 1.15rem;
+  font-weight: bolder;
+  color: #05326f;
+}
+
+.Description-text{
+  z-index: 1;
+  position:absolute;
+  margin-top: -180px;
+  margin-left: 30px;
+  height: 35%;
+  width: 18%;
+  text-align: center;
+  color: #05326f;
+  padding: 5px;
+  font-family: 'Roboto Condensed';
+  font-weight: bolder;
+}

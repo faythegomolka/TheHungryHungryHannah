@@ -1,0 +1,147 @@
+.Contact {
+  text-align: center;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 250vh;;
+  width: 100%;
+}
+
+.Reservation{
+  background-color: #fff6f7;
+  height: 105vh;
+  width: 85%;
+  margin-top: 2.5%;
+  align-items: center;
+}
+
+.Reservation-text{
+  font-family: 'Roboto Condensed';
+  font-size: 2.25rem;
+  color: #05326f;
+  font-weight: bolder;
+  margin-top: 10vh;
+}
+
+.Contact-us{
+  background-color: #05326f;
+  height: 125vh;
+  width: 85%;
+  margin-top: 2.5%;
+  align-items: center;
+}
+
+.Contact-us-text{
+  font-family: 'Roboto Condensed';
+  font-size: 2.25rem;
+  color: #fff6f7;
+  font-weight: bolder;
+  margin-top: 15vh;
+}
+
+.Contact-subtext{
+  font-family: 'Roboto Condensed';
+  font-size: 1rem;
+  color: #fff6f7;
+  font-weight: bolder;
+  letter-spacing: 0.75px;
+}
+
+.Input-style{
+  width: 50%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 2px;
+  background-color: #05326f;
+  outline: none;
+  margin-top: 5vh;
+  font-family: 'Roboto Condensed';
+  font-size: 1.25rem;
+  color: #fff6f7;
+  // width: 40%;
+  // padding: 12px 20px;
+  // border: none;
+  // border-bottom: 1px solid #05326f;
+  // border-radius: 2px;
+  // background-color: inherit;
+  // outline: none;
+  // margin-bottom: 5vh;
+  // transition: width 0.4s ease-in-out;
+  // &:focus{
+  //   width:50%;
+  // }
+  // font-family: 'Roboto Condensed';
+  // font-size: 1.25rem;
+  // color: #05326f;
+}
+
+.Input-style::placeholder{
+    color: #DCDCDC;
+}
+
+
+.Contact-input-style{
+  width: 50%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff6f7;
+  outline: none;
+  margin-top: 5vh;
+  font-family: 'Roboto Condensed';
+  font-size: 1.25rem;
+  color: #05326f;
+}
+
+.Submit-style{
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #05326f;
+  font-family: 'Roboto Condensed';
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #fff6f7;
+  margin-top: 5vh;
+  &:hover{
+    cursor:pointer;
+  }
+}
+
+.Submit-contact{
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background-color: #fff6f7;
+  font-family: 'Roboto Condensed';
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #05326f;
+  margin-top: 5vh;
+  &:hover{
+    cursor:pointer;
+  }
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+select{
+  padding: 8px 12px;
+  width: 52.5%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  appearance: none;
+  background-color: #05326f;
+  margin-top: 5vh;
+  font-family: 'Roboto Condensed';
+  font-size: 1.25rem;
+  color: #fff6f7;
+}

@@ -1,0 +1,102 @@
+.About {
+  text-align: center;
+  background-color: #fff6f7;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+.Image{
+  width: 100%;
+  height: auto;
+}
+
+.Head-text{
+  z-index: 1;
+  background: rgba(5, 50, 111, 0.7);
+  color: #FFE9EC;
+  position: absolute;
+  margin-top:70vh;
+  margin-left: 70%;
+  font-size: 6rem;
+}
+
+.About-body{
+  background-color: #fff6f7;
+  align-items: center;
+  z-index: -1;
+  padding-bottom: 5vh;
+}
+
+.Body-text{
+  font-family: 'Roboto Condensed';
+  font-size: 1.2rem;
+  color: #05326f;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 2;
+}
+
+.Body-header{
+  font-family: 'Roboto Condensed';
+  color: #05326f;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Team-body{
+  background-color: #05326f;
+  align-items: center;
+}
+
+.Team-header{
+  font-family: 'Roboto Condensed';
+  color: #fff6f7;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.Photo-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Founder-image{
+  width: 100%;
+  height: auto;
+  padding: 10;
+}
+
+.Founder-container{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.Founder-text{
+  font-family: 'Roboto Condensed';
+  color: #fff6f7;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#button{
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.25);
+  }
+  border: none;
+  outline: none;
+  background: #05326f;
+}
