@@ -54,13 +54,12 @@ function App() {
           </div>
         </header>
         <Switch>
-          <Route path='/home' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/menu' component={Menu} />
           <Route path='/contact' component={Contact} />
           <Route path='/location-and-hours' component={LocationAndHours} />
+          <Route path='/' component={Home} />
         </Switch>
-        <Slider/>
       </div>
     </Router>
   );
