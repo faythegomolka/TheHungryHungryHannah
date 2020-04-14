@@ -1,7 +1,24 @@
 import React, { Component } from 'react';
 import './styles/Contact.scss';
+import Modal from "./Modal.js";
 
 class Contact extends Component {
+
+  state={
+    show: false,
+    modalMessage: "Thanks for getting in contact",
+  }
+
+  showModal = (type) => {
+    let message = type === "Reservation" ? "Thanks for making a reservation. We'll see you soon!" :
+            "Thanks for getting in contact. We'll get back to you as soon as we can!";
+    this.setState({
+      show: !this.state.show,
+      modalMessage: message,
+    });
+  }
+
+
   render() {
     let today = new Date();
     let maxYear = today.getMonth() + 1 === 12? today.getFullYear() + 1 : today.getFullYear();
@@ -26,7 +43,10 @@ class Contact extends Component {
                     {name: "1:00 PM"}, {name: "1:30 PM"}];
     let selectedTimeId = 0;
     return (
+
         <div className="Contact">
+        <Modal body={this.state.modalMessage}
+              onClose={this.showModal} show={this.state.show}/>
           <div className="Reservation">
             <h2 className="Reservation-text">MAKE A RESERVATION</h2>
             <form>
@@ -43,8 +63,8 @@ class Contact extends Component {
                   <option key={id} value={id}>{reservationTimeOptions[id].name}</option>
                  )}
               </select>
-              <input type="submit" className="Submit-style"></input>
             </form>
+            <button onClick={() => this.showModal("Reservation")} className="Submit-style">Request</button>
           </div>
           <div className="Contact-us">
             <h2 className="Contact-us-text">CONTACT US</h2>
@@ -57,8 +77,8 @@ class Contact extends Component {
               <input type="text" placeholder="Email" className="Contact-input-style"></input>
               <input type="text" placeholder="Phone number" className="Contact-input-style"></input>
               <input type="text" placeholder="Your message" className="Contact-input-style" style={{paddingBottom: '25vh'}}></input>
-              <input type="submit" value="Send" className="Submit-contact"></input>
             </form>
+            <button onClick={() => this.showModal("Contact")} value="Send" className="Submit-contact">Send</button>
           </div>
         </div>
     );

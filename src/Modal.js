@@ -19,7 +19,7 @@ export default class Modal extends React.Component{
           </button>
         </div>
         <div className="Modal-head">
-          <h2 className="Modal-head-text">{this.props.head}</h2>
+          <h2 className="Modal-head-text">{this.props.head || "Hey there, "} </h2>
           <p className="Body-text">{this.props.body}</p>
         </div>
       </div>
