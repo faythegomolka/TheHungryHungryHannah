@@ -42,7 +42,7 @@ function App() {
         <header className="App-header">
           <div className="Header-container">
             <div className="Logo">
-              <Link to={'/home'} className="Logo-text">The Hungry Hungry Hannah</Link>
+              <Link to={'/'} className="Logo-text">The Hungry Hungry Hannah</Link>
               <i class="fas fa-apple-alt"></i>
             </div>
             <div className="Navbar-container">
