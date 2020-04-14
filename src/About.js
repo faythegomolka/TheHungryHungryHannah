@@ -36,7 +36,7 @@ class About extends Component {
           <body className="About-body">
             <h3 className="Body-header">THE HUNGRY HUNGRY HANNAH</h3>
             <p className="Body-text">
-            After graduation from the University of Maryland in 2021 with a Bachelor of Science
+            After graduating from the University of Maryland in 2021 with a Bachelor of Science
             in kinesiology, Hannah Fields decided to pursue her passions for nutrition, cooking,
             and food. Using the valuable experience and leveraging her loyal fans from her popular
             food Instagram account, @thehungryhungryhannah, Fields embarked on what she knew

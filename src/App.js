@@ -33,6 +33,7 @@ import Menu from './Menu';
 import Contact from './Contact';
 import LocationAndHours from './LocationAndHours';
 import Home from './Home';
+import Slider from "./Slider.js";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
           <Route path='/contact' component={Contact} />
           <Route path='/location-and-hours' component={LocationAndHours} />
         </Switch>
+        <Slider/>
       </div>
     </Router>
   );
