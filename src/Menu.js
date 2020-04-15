@@ -67,7 +67,7 @@ class Menu extends Component {
                         <LazyLoad
                         debounce={false}
                         throttle={250}>
-                          <ImageLoader src={item.image} className="Opaque_menu_photo"/>
+                          <img src={item.image} className="Opaque_menu_photo"/>
                         </LazyLoad>
                         <p className="Description-text">{item.description}</p>
                       </div>
@@ -94,7 +94,7 @@ class Menu extends Component {
                         <LazyLoad
                         debounce={false}
                         throttle={250}>
-                          <ImageLoader src={item.image} className="Opaque_menu_photo"/>
+                          <img src={item.image} className="Opaque_menu_photo"/>
                         </LazyLoad>
                         <p className="Description-text">{item.description}</p>
                       </div>
@@ -121,7 +121,7 @@ class Menu extends Component {
                         <LazyLoad
                         debounce={false}
                         throttle={250}>
-                          <ImageLoader src={item.image} className="Opaque_menu_photo"/>
+                          <img src={item.image} className="Opaque_menu_photo"/>
                         </LazyLoad>
                         <p className="Description-text">{item.description}</p>
                       </div>
