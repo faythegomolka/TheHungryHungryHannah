@@ -3,6 +3,8 @@ import './styles/Menu.scss';
 import {BREAKFAST_MENU} from "./constants/BreakfastMenu.js";
 import {LUNCH_MENU} from "./constants/LunchMenu.js";
 import {BAKERY_MENU} from "./constants/Bakery.js";
+import LazyLoad from 'react-lazy-load';
+import ImageLoader from "./ImageLoader.js";
 
 class Menu extends Component {
   constructor(props){
@@ -62,7 +64,11 @@ class Menu extends Component {
                   onMouseLeave={() => this.handleMouseHover(index)}>
                     {item.hover?
                       <div>
-                        <img src={item.image} className="Opaque_menu_photo"/>
+                        <LazyLoad
+                        debounce={false}
+                        throttle={250}>
+                          <ImageLoader src={item.image} className="Opaque_menu_photo"/>
+                        </LazyLoad>
                         <p className="Description-text">{item.description}</p>
                       </div>
                       :
@@ -85,7 +91,11 @@ class Menu extends Component {
                   onMouseLeave={() => this.handleMouseHover(index)}>
                     {item.hover?
                       <div>
-                        <img src={item.image} className="Opaque_menu_photo"/>
+                        <LazyLoad
+                        debounce={false}
+                        throttle={250}>
+                          <ImageLoader src={item.image} className="Opaque_menu_photo"/>
+                        </LazyLoad>
                         <p className="Description-text">{item.description}</p>
                       </div>
                       :
@@ -108,7 +118,11 @@ class Menu extends Component {
                   onMouseLeave={() => this.handleMouseHover(index)}>
                     {item.hover?
                       <div>
-                        <img src={item.image} className="Opaque_menu_photo"/>
+                        <LazyLoad
+                        debounce={false}
+                        throttle={250}>
+                          <ImageLoader src={item.image} className="Opaque_menu_photo"/>
+                        </LazyLoad>
                         <p className="Description-text">{item.description}</p>
                       </div>
                       :
