@@ -10,43 +10,84 @@ import g from "./media/FoodGridPics/7.png"
 import h from "./media/FoodGridPics/8.png"
 import i from "./media/FoodGridPics/9.png"
 import j from "./media/FoodGridPics/10.png"
-
+import LazyLoad from 'react-lazy-load';
+import ImageLoader from "./ImageLoader.js";
 
 function PhotoGrid(){
   return(
     <div className="PhotoGrid">
       <div className="Row-container">
         <div className="Image-container">
-          <img src={a} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={a} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={b} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={b} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={c} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={c} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={d} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={d} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={e} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={e} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
       </div>
       <div className="Row-container">
         <div className="Image-container">
-          <img src={f} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={f} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={g} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={g} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={h} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={h} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={i} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={i} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
         <div className="Image-container">
-          <img src={j} alt="food" className="Grid-image"></img>
+          <LazyLoad
+          debounce={false}
+          throttle={250}>
+            <ImageLoader src={j} alt="food" className="Grid-image"/>
+          </LazyLoad>
         </div>
       </div>
     </div>

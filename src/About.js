@@ -6,6 +6,8 @@ import faythe from "./media/faythe_photo.jpg"
 import hannah from "./media/hannah_photo.jpg"
 import noam from "./media/noam.jpg"
 import Modal from "./Modal.js";
+import LazyLoad from 'react-lazy-load';
+import ImageLoader from "./ImageLoader.js";
 
 class About extends Component {
   state={
@@ -31,7 +33,9 @@ class About extends Component {
   render() {
     return (
         <div className="About">
-          <img src={cafe} alt="slide-img" className="Image"></img>
+          <LazyLoad>
+            <ImageLoader src={cafe} alt="slide-img" className="Image"/>
+          </LazyLoad>
           <h1 className="Head-text">ABOUT</h1>
           <body className="About-body">
             <h3 className="Body-header">THE HUNGRY HUNGRY HANNAH</h3>
@@ -60,19 +64,31 @@ class About extends Component {
             <div className="Photo-container">
               <div className="Founder-container">
                 <button id="button" onClick={() => this.showModal("Faythe")}>
-                  <img src={faythe} alt="founder" className="Founder-image"></img>
+                  <LazyLoad
+                  debounce={false}
+                  throttle={250}>
+                    <ImageLoader src={faythe} alt="founder" className="Founder-image"/>
+                  </LazyLoad>
                   <p className="Founder-text">FAYTHE</p>
                 </button>
               </div>
               <div className="Founder-container">
                 <button id="button" onClick={() => this.showModal("Hannah")}>
-                  <img src={hannah} alt="founder" className="Founder-image"></img>
+                  <LazyLoad
+                  debounce={false}
+                  throttle={250}>
+                    <ImageLoader src={hannah} alt="founder" className="Founder-image"/>
+                  </LazyLoad>
                   <p className="Founder-text">HANNAH</p>
                 </button>
               </div>
               <div className="Founder-container">
                 <button id="button" onClick={() => this.showModal("Noam")}>
-                  <img src={noam} alt="founder" className="Founder-image"></img>
+                  <LazyLoad
+                  debounce={false}
+                  throttle={250}>
+                    <ImageLoader src={noam} alt="founder" className="Founder-image"/>
+                  </LazyLoad>
                   <p className="Founder-text">NOAM</p>
                 </button>
               </div>
