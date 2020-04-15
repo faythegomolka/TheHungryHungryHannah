@@ -5,12 +5,14 @@
   width:100%;
   height: 100%;
   background: rgba(255, 246, 247, 0.8);
+  z-index: 3;
 }
 
 .Close-modal-button{
   position: absolute;
   top: 7%;
   left: 93%;
+  z-index: 3;
 }
 
 .Modal-button-style{
